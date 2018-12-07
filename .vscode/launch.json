@@ -2,6 +2,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LimitsServiceApplication",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.simsekonline.microservices.limitsservice.LimitsServiceApplication",
+            "args": "",
+            "projectName": "limits-service"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SpringCloudConfigServerApplication",
             "request": "launch",
             "cwd": "${workspaceFolder}",
