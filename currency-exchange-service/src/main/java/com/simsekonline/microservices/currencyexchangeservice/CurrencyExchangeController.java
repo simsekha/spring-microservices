@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CurrencyExchangeController {
 
-    @Autowired
-    private Environment environment;
+	//@Autowired
+	//private Environment environment;
 
     @GetMapping("/currency-exchange-service/from/{from}/to/{to}")
-    public ExchangeValue retreiveExchangeValue(@PathVariable String from, @PathVariable String to) {
+    public ExchangeValue retreiveExchangeValue(@PathVariable String from, @PathVariable String to) {    
         ExchangeValue exchangeValue = new ExchangeValue(1000L, from, to, BigDecimal.valueOf(65));
-        // exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
+        //exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
         exchangeValue.setPort(8000);
 
         return exchangeValue;
