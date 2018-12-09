@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CurrencyConversionServiceApplication",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.simsekonline.microservices.currencyconversionservice.CurrencyConversionServiceApplication",
+            "args": "",
+            "projectName": "currency-conversion-service"
+        }
+    ]
+}
